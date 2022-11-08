@@ -66,8 +66,8 @@ const myCanvas = <HTMLCanvasElement>document.getElementById("main_canvas")
 // 枚举
 enum Direction {
 	Up = 1,
-	Down,
-	Left,
+	Down,//2
+	Left,//3
 	Right
 }
 ```
@@ -616,6 +616,12 @@ extends可以继承所有属性方法，再实现自己的属性方法，多个�
 **重写方法**
 
 同名即可覆盖，覆盖时，类型需要兼容，类似方法的重载
+
+**implements 与 extends 的区别**
+
+extends（继承）：一个新的接口或者类，从父类或者接口继承所有的属性和方法，不可以重写属性，但可以重写方法
+
+implements（实现）：实现，一个新的类，从父类或者接口实现所有的属性和方法，同时可以重写属性和方法，包含一些新的功能
 
 **初始化的循序**
 
