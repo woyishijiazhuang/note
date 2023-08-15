@@ -10,7 +10,7 @@
  * setTimeout(stopAlwasRAF, 1000)
  */
 function alwaysRAF(callback) {
-  let stop = null
+  let stop = false
   
   const loopRAF = callback => {
     requestAnimationFrame(DOMHighResTimeStamp => {
